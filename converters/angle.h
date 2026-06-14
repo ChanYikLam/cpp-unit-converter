@@ -5,10 +5,10 @@
 
 class AngleConverter : public FactorConverter {
 public:
-    AngleConverter() : FactorConverter("\xe8\xa7\x92\xe5\xba\xa6 (Angle)") {
-        addUnit("degree",       1.0);
-        addUnit("radian",       57.29577951308232);
-        addUnit("gradian",      0.9);
+    AngleConverter() : FactorConverter("角度") {
+        addUnit("度(°)",       1.0);
+        addUnit("弧度(rad)",       57.29577951308232);
+        addUnit("百分度(gon)",      0.9);
     }
 };
 

@@ -9,27 +9,27 @@ class TemperatureConverter : public AbstractConverter {
     std::vector<std::string> units_;
 
     double toCelsius(double value, const std::string& from) const {
-        if (from == "Celsius") return value;
-        if (from == "Fahrenheit") return (value - 32.0) * 5.0 / 9.0;
-        if (from == "Kelvin") return value - 273.15;
+        if (from == "摄氏度(℃)") return value;
+        if (from == "华氏度(℉)") return (value - 32.0) * 5.0 / 9.0;
+        if (from == "开尔文(K)") return value - 273.15;
         return 0.0;
     }
 
     double fromCelsius(double celsius, const std::string& to) const {
-        if (to == "Celsius") return celsius;
-        if (to == "Fahrenheit") return celsius * 9.0 / 5.0 + 32.0;
-        if (to == "Kelvin") return celsius + 273.15;
+        if (to == "摄氏度(℃)") return celsius;
+        if (to == "华氏度(℉)") return celsius * 9.0 / 5.0 + 32.0;
+        if (to == "开尔文(K)") return celsius + 273.15;
         return 0.0;
     }
 
 public:
     TemperatureConverter() {
-        units_.push_back("Celsius");
-        units_.push_back("Fahrenheit");
-        units_.push_back("Kelvin");
+        units_.push_back("摄氏度(℃)");
+        units_.push_back("华氏度(℉)");
+        units_.push_back("开尔文(K)");
     }
 
-    const char* getCategoryName() const { return "\xe6\xb8\xa9\xe5\xba\xa6 (Temperature)"; }
+    const char* getCategoryName() const { return "温度"; }
 
     const std::vector<std::string>& getUnits() const { return units_; }
 

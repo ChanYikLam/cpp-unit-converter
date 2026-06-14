@@ -5,14 +5,14 @@
 
 class TimeConverter : public FactorConverter {
 public:
-    TimeConverter() : FactorConverter("\xe6\x97\xb6\xe9\x97\xb4 (Time)") {
-        addUnit("sec",          1.0);
-        addUnit("min",          60.0);
-        addUnit("hour",         3600.0);
-        addUnit("day",          86400.0);
-        addUnit("week",         604800.0);
-        addUnit("month(30d)",   2592000.0);
-        addUnit("year(365d)",   31536000.0);
+    TimeConverter() : FactorConverter("时间") {
+        addUnit("秒",          1.0);
+        addUnit("分",          60.0);
+        addUnit("时",         3600.0);
+        addUnit("天",          86400.0);
+        addUnit("周",         604800.0);
+        addUnit("月(30天)",   2592000.0);
+        addUnit("年(365天)",   31536000.0);
     }
 };
 

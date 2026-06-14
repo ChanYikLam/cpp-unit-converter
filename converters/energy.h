@@ -5,13 +5,13 @@
 
 class EnergyConverter : public FactorConverter {
 public:
-    EnergyConverter() : FactorConverter("\xe8\x83\xbd\xe9\x87\x8f (Energy)") {
-        addUnit("J",            1.0);
-        addUnit("kJ",           1000.0);
-        addUnit("cal",          4.184);
-        addUnit("kcal",         4184.0);
-        addUnit("Wh",           3600.0);
-        addUnit("kWh",          3600000.0);
+    EnergyConverter() : FactorConverter("能量") {
+        addUnit("焦耳(J)",            1.0);
+        addUnit("千焦(kJ)",           1000.0);
+        addUnit("卡路里(cal)",          4.184);
+        addUnit("千卡(kcal)",         4184.0);
+        addUnit("瓦时(Wh)",           3600.0);
+        addUnit("千瓦时(kWh)",          3600000.0);
     }
 };
 

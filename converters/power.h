@@ -5,12 +5,12 @@
 
 class PowerConverter : public FactorConverter {
 public:
-    PowerConverter() : FactorConverter("\xe5\x8a\x9f\xe7\x8e\x87 (Power)") {
-        addUnit("W",            1.0);
-        addUnit("kW",           1000.0);
-        addUnit("MW",           1000000.0);
-        addUnit("hp(metric)",   735.49875);
-        addUnit("hp(imperial)", 745.699871582);
+    PowerConverter() : FactorConverter("功率") {
+        addUnit("瓦(W)",            1.0);
+        addUnit("千瓦(kW)",           1000.0);
+        addUnit("兆瓦(MW)",           1000000.0);
+        addUnit("公制马力",   735.49875);
+        addUnit("英制马力", 745.699871582);
     }
 };
 

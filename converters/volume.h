@@ -5,14 +5,14 @@
 
 class VolumeConverter : public FactorConverter {
 public:
-    VolumeConverter() : FactorConverter("\xe4\xbd\x93\xe7\xa7\xaf (Volume)") {
-        addUnit("L",            1.0);
-        addUnit("mL",           0.001);
-        addUnit("m^3",          1000.0);
-        addUnit("gallon(US)",   3.785411784);
-        addUnit("qt",           0.946352946);
-        addUnit("pt",           0.473176473);
-        addUnit("cup",          0.24);
+    VolumeConverter() : FactorConverter("体积") {
+        addUnit("升",            1.0);
+        addUnit("毫升",           0.001);
+        addUnit("立方米",          1000.0);
+        addUnit("加仑(美)",   3.785411784);
+        addUnit("夸脱",           0.946352946);
+        addUnit("品脱",           0.473176473);
+        addUnit("杯",          0.24);
     }
 };
 

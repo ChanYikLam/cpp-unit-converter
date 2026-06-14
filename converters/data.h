@@ -5,14 +5,14 @@
 
 class DataConverter : public FactorConverter {
 public:
-    DataConverter() : FactorConverter("\xe6\x95\xb0\xe6\x8d\xae\xe5\xad\x98\xe5\x82\xa8 (Data)") {
-        addUnit("B",            1.0);
-        addUnit("KB",           1024.0);
-        addUnit("MB",           1048576.0);
-        addUnit("GB",           1073741824.0);
-        addUnit("TB",           1099511627776.0);
-        addUnit("PB",           1125899906842624.0);
-        addUnit("bit",          0.125);
+    DataConverter() : FactorConverter("数据存储") {
+        addUnit("字节(B)",            1.0);
+        addUnit("千字节(KB)",           1024.0);
+        addUnit("兆字节(MB)",           1048576.0);
+        addUnit("吉字节(GB)",           1073741824.0);
+        addUnit("太字节(TB)",           1099511627776.0);
+        addUnit("拍字节(PB)",           1125899906842624.0);
+        addUnit("比特(bit)",          0.125);
     }
 };
 
