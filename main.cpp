@@ -81,6 +81,10 @@ int main() {
 
         int choice;
         if (!(std::cin >> choice)) {
+            if (std::cin.eof()) {
+                std::cout << "\nInput ended, exiting.\n" << std::endl;
+                break;
+            }
             resetInput();
             continue;
         }
@@ -94,7 +98,7 @@ int main() {
             std::cout << "Error: invalid choice, please retry!\n";
             resetInput();
             std::cout << "Press Enter to continue...";
-            std::cin.get();
+            std::cin.ignore(10000, '\n');
             continue;
         }
 
@@ -103,7 +107,7 @@ int main() {
             std::cout << "Error: failed to create converter!\n";
             resetInput();
             std::cout << "Press Enter to continue...";
-            std::cin.get();
+            std::cin.ignore(10000, '\n');
             continue;
         }
 
@@ -111,7 +115,7 @@ int main() {
         delete conv;
 
         std::cout << "\nPress Enter to return to main menu...";
-        std::cin.get();
+        std::cin.ignore(10000, '\n');
     }
 
     return 0;
